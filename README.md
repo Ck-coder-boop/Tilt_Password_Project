@@ -19,3 +19,34 @@ Main source files:
 - I2C communication with accelerometer  
 - SPI display interface  
 - UART debugging using serial monitor  
+# Tilt Password Project
+
+## Overview
+This project implements a tilt-based password system using sensor input. The system detects specific tilt movements and compares them against a predefined sequence to grant access.
+
+## Features
+- Tilt-based password input
+- Sensor-driven interaction
+- Real-time validation of input sequence
+- Simple and intuitive user interface
+
+## How It Works
+The system uses a tilt sensor (or accelerometer) to detect directional movement. Each tilt corresponds to a specific input. A correct sequence of tilts acts as the password.
+
+## How to Run
+1. Clone the repository:
+   git clone https://github.com/Ck-coder-boop/Tilt_Password_Project
+
+2. Open the project in the required environment VS code
+
+3. Upload the code to the microcontroller
+
+4. Press the button to initilise the sequence
+
+5. Input the tilt sequence Left, right, forward and back
+
+## Demo Video and code explanation
+https://youtu.be/VWH-4uiciJQ
+
+## Author
+Conor King
