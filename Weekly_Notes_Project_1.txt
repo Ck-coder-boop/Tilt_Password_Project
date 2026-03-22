@@ -1,0 +1,133 @@
+-> Week 1 / Start
+
+looked at project brief properly
+
+seen we needed embedded system + sensors etc
+
+didn’t want something too complicated
+
+thought of tilt password idea
+
+makes sense bc accelerometers used in phones
+
+went on google + youtube just to see how tilt works
+
+seen stuff about x and y axis and using thresholds
+
+wasn’t fully sure how to turn it into a password system yet
+
+just knew tilt = input somehow
+
+-> Early Build
+
+wired up accelerometer + board
+
+tried to just get values first
+
+had issues straight away:
+
+nothing coming through sometimes
+
+values jumping around
+
+didn’t know if it was wiring or code
+
+-> Trying to Figure Out Issue
+
+used serial monitor to check values
+
+seen x and y values coming in
+
+so knew sensor was working
+
+made it easier to stop guessing
+
+realised problem more in logic than hardware
+
+-> Tilt Detection
+
+started with just left tilt
+
+kept adjusting values until it worked
+
+loads of trial and error here
+
+sometimes triggering when not moving
+
+had to increase threshold
+
+once left worked:
+
+added right
+
+forward
+
+backward
+
+Debugging
+
+used serial monitor the whole time
+
+printing:
+
+tilt direction
+
+raw values
+
+helped a lot to see what was actually happening
+
+noticed inputs being counted multiple times
+
+-> LEDs
+
+added LEDs just to see output easier
+
+used them to show when correct input happens
+
+made debugging way easier than just serial monitor
+
+could visually see if sequence was working
+
+-> Password Logic
+
+made basic sequence system
+
+if correct → go next
+
+if wrong → reset
+
+issue:
+
+same tilt being counted multiple times
+
+fixed by adding check so it only reads once per movement
+
+-> Timing
+
+noticed timing was off
+
+sometimes too fast or missing inputs
+
+added delays + timer
+
+also added reset if too slow
+
+-> Final Testing
+
+tested loads of times
+
+tried breaking it on purpose
+
+adjusted thresholds again
+
+made it more consistent
+
+-> End
+
+cleaned code a bit
+
+uploaded to github
+
+recorded video
+
+-> done
